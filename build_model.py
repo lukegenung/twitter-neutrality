@@ -14,11 +14,11 @@ using a Niave Bayes Classifier. Accuracy is 99.5%.
 '''
 
 def import_csv(csv_filename):
-	# append .csv filetype if not included
+	data = []
+
+	# add '.csv' type if not included in csv_filename
 	if not csv_filename.endswith('.csv'):
 		csv_filename = csv_filename + '.csv'
-
-	data = []
 
 	# save csv data
 	with open(csv_filename, newline='') as csv_file:
@@ -168,15 +168,6 @@ def main():
 	print(classifier.show_most_informative_features(10))
 
 	return classifier
-
-	# # test model with custom text
-	# custom_tweet = "I ordered just once from TerribleCo, they screwed up, never used the app again."
-	# custom_tokens = remove_noise(word_tokenize(custom_tweet))
-
-	# # print custom tweet and label probabilities
-	# dist = classifier.prob_classify(dict([token, True] for token in custom_tokens))
-	# for label in dist.samples():
-	# 	print(custom_tweet, "%s: %f" % (label, dist.prob(label)))
 
 
 if __name__ == "__main__":
