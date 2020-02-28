@@ -84,8 +84,8 @@ function getTweets(query, lang, resultType, count, tweetMode, sinceID) {
 */
 function getRequestHeaders() {
   // Set the consumer key and secret - ENTER YOUR CREDENTIALS!
-  var consumerKey = 'hkdqDF8JCrCLxeKg4jZ5ZeJY1';
-  var consumerSecret = 'x4ipkG36yEJh7hIBRZczU8DCeNDFbQMpzWLdmyPGR3KfuDPUXN';
+  var consumerKey = '';
+  var consumerSecret = '';
 
   // Get access token.
   var tokenUrl = "https://api.twitter.com/oauth2/token";
