@@ -14,6 +14,8 @@ def get_sentiment(classifier, tweets, keep_status=True):
 	Arguments:
 		classifier: NLTK Naive Bayes Classifier object.
 		tweets: Tweets as a list of dictionaries.
+		keep_status: Set as False to remove tweet status and reduce data size, 
+			keeping sentiment distribution and label.
 	Returns:
 		tweets: Tweets as a list of dictionaries.
 	'''
@@ -50,7 +52,7 @@ def get_sentiment(classifier, tweets, keep_status=True):
 		else:
 			tweet['label'] = 'None'
 
-		# optional: remove tweet status to reduce data size
+		# optional: remove tweet status to reduce data size (keeping sentiment distribution and label)
 		if tweet['status'] and keep_status == False:
 			del tweet['status']
 
