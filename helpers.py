@@ -1,11 +1,11 @@
+'''
+Helper functions to clean text data for analysis, read and write csv files.
+'''
+
 from nltk.stem.wordnet import WordNetLemmatizer
 from nltk.tag import pos_tag
 from collections import Counter
 import csv, time, re, string
-
-'''
-Helper functions to clean text data for analysis, read and write csv files.
-'''
 
 
 def import_csv(csv_filename):

@@ -1,9 +1,9 @@
-from nltk.tokenize import casual_tokenize
-import build_model, helpers
-
 '''
 Get distribution of positive and negative sentiment probability for supplied text.
 '''
+
+from nltk.tokenize import casual_tokenize
+import build_model, helpers
 
 
 def get_sentiment(classifier, tweets, keep_status=True):

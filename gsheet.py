@@ -1,5 +1,7 @@
-# based on https://www.twilio.com/blog/2017/02/an-easy-way-to-read-and-write-to-a-google-spreadsheet-in-python.html
-# read that file for how to generate the creds and how to use gspread to read and write to the spreadsheet
+'''
+Based on https://www.twilio.com/blog/2017/02/an-easy-way-to-read-and-write-to-a-google-spreadsheet-in-python.html
+Read that file for how to generate the creds and how to use gspread to read and write to the spreadsheet.
+'''
 
 import gspread, itertools
 from oauth2client.service_account import ServiceAccountCredentials

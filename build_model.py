@@ -1,9 +1,3 @@
-import helpers
-from nltk.corpus import twitter_samples, stopwords
-from nltk.tokenize import word_tokenize, casual_tokenize
-from nltk import FreqDist, classify, NaiveBayesClassifier
-import random
-
 '''
 Module uses NLTK Twitter samples to build a sentiment analysis model
 using a Naive Bayes Classifier. Accuracy is 99.5%.
@@ -11,6 +5,12 @@ using a Naive Bayes Classifier. Accuracy is 99.5%.
 Based on: https://www.digitalocean.com/community/tutorials/how-to-perform-sentiment-analysis-in-python-3-using-the-natural-language-toolkit-nltk
 And: https://www.analyticsvidhya.com/blog/2018/07/hands-on-sentiment-analysis-dataset-python/
 '''
+
+import helpers
+from nltk.corpus import twitter_samples, stopwords
+from nltk.tokenize import word_tokenize, casual_tokenize
+from nltk import FreqDist, classify, NaiveBayesClassifier
+import random
 
 
 def main():
