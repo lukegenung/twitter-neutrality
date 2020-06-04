@@ -1,10 +1,10 @@
 '''
 REQUIREMENTS:
-1. Update the gsheet arguments below
+1. Update the Google Sheet arguments below
 2. The specified Google Sheet to pull from MUST have a column named 'status'
 
 OPTIONAL:
-1. If you want to add your own training data, update build_model.py
+3. If you want to add your own training data, update csv filepath in build_model.py
 '''
 
 import gsheet, build_model, sent_analysis, helpers
