@@ -27,7 +27,7 @@ def get_sentiment(classifier, tweets, keep_status=True):
 		custom_tokens = helpers.remove_noise(casual_tokenize(tweet['status']))
 		dist = classifier.prob_classify(dict([token, True] for token in custom_tokens))
 
-		# append probabilites to list
+		# append probabilities to list
 		pos_probability = dist.prob('Positive')
 		neg_probability = dist.prob('Negative')
 
